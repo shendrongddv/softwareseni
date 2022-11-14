@@ -1,0 +1,111 @@
+/* FONT */
+@import url(../fonts/ubuntu.css);
+
+/* VARIABLE */
+:root {
+  --f-body: "Ubuntu", sans-serif;
+  --f-display: "Ubuntu", sans-serif;
+  --c-brand: #113f59;
+  --c-accent: #f4cd0c;
+  --transition: all 0.5s ease;
+}
+
+/* RESET */
+body {
+  font-family: var(--f-body);
+  color: var(--c-brand);
+}
+
+/* HELPER */
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* BTN */
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-width: 1px;
+  border-radius: 999px;
+  transition: var(--transition);
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: translateY(-2px);
+}
+
+.btn i {
+  transition: var(--transition);
+}
+
+.btn:hover i {
+  transform: translateX(6px);
+}
+
+.btn-accent {
+  color: var(--c-brand);
+  background-color: var(--c-accent);
+  border-color: var(--c-accent);
+}
+
+.btn-accent:hover {
+  color: var(--c-accent);
+  background-color: transparent;
+  border-color: var(--c-accent);
+}
+
+.btn-accent-outline {
+  color: var(--c-accent);
+  background-color: transparent;
+  border-color: var(--c-accent);
+}
+
+.btn-accent-outline:hover {
+  color: var(--c-brand);
+  background-color: var(--c-accent);
+  border-color: var(--c-accent);
+}
+
+/* NAVBAR */
+.navbar-brand img {
+  max-height: 30px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* HERO */
+#hero {
+  position: relative;
+  background-image: url(../images/hero-main.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 0%;
+}
+
+#hero h1 {
+  position: relative;
+  display: flex;
+}
+
+/* SERVICES */
+#services {
+  background-color: var(--c-brand);
+  color: white;
+}
+
+.serviceCard {
+  background-color: #164560;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  border-radius: 24px;
+}
