@@ -178,17 +178,20 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 8 !important;
+  padding: 12px;
   border-radius: 6px;
   transition: var(--transition);
 }
 
 .clientCard img {
-  height: 32px;
+  aspect-ratio: initial;
+  max-height: 50px;
   width: auto;
   filter: grayscale(100%);
   opacity: 0.8;
   transition: var(--transition);
+  border: 1px solid teal;
 }
 
 .clientCard:hover {
