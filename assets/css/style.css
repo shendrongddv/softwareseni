@@ -18,6 +18,10 @@ body {
   color: var(--c-brand);
 }
 
+p {
+  color: rgba(17, 63, 89, 0.8);
+}
+
 img {
   max-width: 100%;
 }
@@ -159,4 +163,40 @@ img {
   padding: 24px;
   display: flex;
   flex-direction: column;
+}
+
+/* REVIEW */
+.reviewCard img {
+  height: 80px;
+  aspect-ratio: 1 / 1;
+}
+
+/* CLIENT */
+.clientCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  transition: var(--transition);
+}
+
+.clientCard img {
+  height: 32px;
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: var(--transition);
+}
+
+.clientCard:hover {
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.clientCard:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
 }
