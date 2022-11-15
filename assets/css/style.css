@@ -191,7 +191,6 @@ img {
   filter: grayscale(100%);
   opacity: 0.8;
   transition: var(--transition);
-  border: 1px solid teal;
 }
 
 .clientCard:hover {
